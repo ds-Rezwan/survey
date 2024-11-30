@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Satisfaction Survey</h1>
+    <p>Thank you for taking the time to complete our survey. Your feedback helps us improve our products and services.</p>
+
+    <form action="/submit-survey" method="POST">
+        
+        <!-- Section 1: Basic Information -->
+        <h2>Section 1: Basic Information</h2>
+        
+        <label for="name">Name (Optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="age">Age Group:</label>
+        <input type="text" id="age" name="age">
+        
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender">
+
+        <!-- Section 2: Overall Satisfaction -->
+        <h2>Section 2: Overall Satisfaction</h2>
+        
+        <label for="satisfaction">How satisfied are you with our products/services overall?</label>
+        <input type="text" id="satisfaction" name="satisfaction">
+        
+        <label for="recommendation">How likely are you to recommend us to a friend or colleague?</label>
+        <input type="text" id="recommendation" name="recommendation">
+
+        <!-- Section 3: Specific Feedback -->
+        <h2>Section 3: Specific Feedback</h2>
+        
+        <label for="quality">Quality of Products/Services:</label>
+        <input type="text" id="quality" name="quality">
+        
+        <label for="timeliness">Timeliness of Delivery/Service:</label>
+        <input type="text" id="timeliness" name="timeliness">
+        
+        <label for="support">Customer Support:</label>
+        <input type="text" id="support" name="support">
+        
+        <label for="value">What do you value most about our product/service?</label>
+        <input type="text" id="value" name="value">
+        
+        <label for="improvement">What could we improve?</label>
+        <textarea id="improvement" name="improvement" rows="4"></textarea>
+
+        <!-- Section 4: Final Comments -->
+        <h2>Section 4: Final Comments</h2>
+        
+        <label for="issues">Have you experienced any issues with our product/service?</label>
+        <textarea id="issues" name="issues" rows="4"></textarea>
+
+        <label for="comments">Any additional feedback or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
